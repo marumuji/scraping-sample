@@ -9,6 +9,10 @@ tomorrowWeather = soup.find(class_='tomorrow-weather')
 # print(todayWeather)
 # print(tomorrowWeather)
 
+# アイコンURLの取得
+print(todayWeather.find('img').get('src'))
+
+
 # 今日の天気
 print('■今日の天気')
 print(todayWeather.find(class_ = 'weather-telop').text)
